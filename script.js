@@ -9,7 +9,7 @@ sendBtn.addEventListener("click", async () => {
     appendMessage("user", text);
     userInput.value = "";
 
-    const response = await fetch("https://2719761e.ai-chatbot-esx.pages.dev", {
+    const response = await fetch("ai-chat-recepionists.mohamedamine-elmahboub.workers.dev", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ message, email })
@@ -26,3 +26,4 @@ function appendMessage(sender, text) {
     chatBox.appendChild(msg);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
